@@ -1,0 +1,9 @@
+.section-background {
+    background-image: url('../../../public/assets/images/background.jpg'); /* Remplacez avec le chemin de votre image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.8; /* Réduction de l'opacité */
+    box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.5); /* Ombre intérieure */
+}
+

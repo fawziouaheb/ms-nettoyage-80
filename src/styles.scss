@@ -1,0 +1,30 @@
+
+// Custom Theming for Angular Material
+
+// Personnalisation des couleurs
+// Importation des fichiers nécessaires de Bootstrap
+
+
+$primary: #FDF62C;   // couleur du titre principal
+$secondary: #34F05D; // couleur de l'autre titre
+$background-color: #423E3E;  // couleur de fond
+
+// Modifier les couleurs du thème
+
+.drop-shadow {
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
+}
+.title-very-large {
+  font-size: 5vw;  // Taille personnalisée très grande
+  font-weight: 600;   // Semi-gras
+  color: $primary;    // Applique la couleur primaire
+  text-align: center; // Centrer le texte
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);  // Optionnel : ombre pour ajouter du relief
+  
+  margin-top: 10vh;  // Espace en haut (10% de la hauteur de la fenêtre)
+  margin-bottom: 10vh;  // Espace en bas (10% de la hauteur de la fenêtre)
+}
+// Modifier les couleurs du thème
+body {
+    background-color: $background-color
+}
