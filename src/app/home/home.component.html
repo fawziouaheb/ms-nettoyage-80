@@ -1,104 +1,11 @@
-<div class="container-fluid position-relative py-5 text-center text-light section-background">
-  <div class="container position-relative">
-    <!-- Barre de navigation responsive -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+  <!--section de la présentation de -->
+  <app-presentation-ms></app-presentation-ms>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <!-- Liste de navigation alignée à droite avec 'ms-auto' -->
-        <ul class="navbar-nav ms-auto">  <!-- Ajout de 'ms-auto' pour l'alignement à droite -->
-          <li class="nav-item me-3">
-            <a class="nav-link" href="#" style="color: #004aad; font-weight: bold;">Accueil</a>
-          </li>
-          <li class="nav-item me-3">
-            <a class="nav-link" href="#" style="color: #004aad; font-weight: bold;">Nos Services</a>
-          </li>
-          <li class="nav-item me-3">
-            <a class="nav-link" href="#" style="color: #004aad; font-weight: bold;">Nos Packs</a>
-          </li>
-          <li class="nav-item me-3">
-            <a class="nav-link" href="#" style="color: #004aad; font-weight: bold;">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <!-- les services -->
+  <app-service></app-service>
 
-    <!-- Titre et texte -->
-    <div class="title-very-large">MS NETTOYAGE 80</div>
-    <p class="mt-4 fs-5">
-      <strong><span style="color: #FDF62C; font-weight: bold; font-size: 1.5em;">MS NETTOYAGE 80</span></strong> est une société spécialisée dans le nettoyage professionnel de tapis et moquettes de voiture. 
-      Nous offrons un nettoyage en profondeur pour éliminer taches, impuretés et odeurs, redonnant ainsi à l'intérieur de votre véhicule 
-      fraîcheur et propreté. Grâce à des produits écologiques et un équipement de pointe, nous assurons un service rapide et de qualité, 
-      adapté à vos besoins.
-    </p>
-    <div class="d-grid d-sm-inline-block mt-3">
-      <a href="#" class="btn btn-primary btn-lg">Découvrir plus</a>
-    </div>
-  </div>
-</div>
-
-
-
-<!-- les services -->
-<div class="container py-5">
-  <div class="row justify-content-center">
-    <div class="col-12 col-md-10 col-lg-8">
-      <!-- Largeur contrôlée avec Bootstrap -->
-      <div class="border border-2 rounded-3 p-5 text-center" style="border-color: #FDF62C !important;">
-        <h2 style="font-size: 2rem; color: #FDF62C;">Nos Services</h2>
-        <!-- Section Services -->
-        <div class="row mt-4">
-          <!-- Service 1 -->
-          <div class="col-md-6 mb-4">
-            <div class="card h-100 shadow-sm border-0">
-              <img src="assets/images/nettoyage-auto.png" class="card-img-top" alt="Nettoyage Auto">
-              <div class="card-body text-center" style="background-color: #FDF62C !important;">
-                <h5 class="card-title" style="color: #004aad; font-weight: bold;">Nettoyage Auto</h5>
-                <p class="card-text text-dark" style="font-family: 'Nerko One', sans-serif;">
-                  Lavage et séchage à la main<br>
-                  Rénovation plastiques<br>
-                  Nettoyage Jantes<br>
-                  Aspi et nettoyage en profondeur
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Service 2 -->
-          <div class="col-md-6 mb-4">
-            <div class="card h-100 shadow-sm border-0">
-              <img src="assets/images/nettoyage-option.png" class="card-img-top" alt="Nettoyage Option">
-              <div class="card-body text-center" style="background-color: #FDF62C !important;">
-                <h5 class="card-title" style="color: #004aad; font-weight: bold;">Nettoyage Option</h5>
-                <p class="card-text text-dark" style="font-family: 'Nerko One', sans-serif;">
-                  Tapis<br>
-                  Canapé<br>
-                  Tissus<br>
-                  Vitres<br>
-                  Sol pour extérieur
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Tarifs en dehors de Nos Services -->
-<div class="container mt-4">
-  <div class="row">
-    <div class="col-12">
-      <div class="tarifs-container">
-        <p class="tarifs-text">
-          Tarifs particulier TTC sur Amiens et ses alentours + 1.5  €/Km pour plus de 15 Km d'Amiens
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
+  <!-- Tarifs en dehors de Nos Services -->
+  <app-animation-text  [texte]="'Tarifs particulier TTC sur Amiens et ses alentours + 1.5 €/Km pour plus de 15 Km d\'Amiens'"></app-animation-text>
 
 <div class="container-fluid py-5">
 
@@ -368,83 +275,21 @@
     </div>
   </div>
 
-  <!-- Tarifs en dehors de Nos Services -->
-<div class="container mt-4">
-  <div class="row">
-    <div class="col-12">
-      <div class="tarifs-container">
-        <p class="tarifs-text">
-          Sur rdv, possibilité après 18h pour 15$ de plus
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
+
   
+    <!-- Nos services sur RDV-->
+    <app-animation-text  [texte]="'Sur rdv, possibilité après 18h pour 15$ de plus'"></app-animation-text>
 
-<div class="row justify-content-center">
-  <div class="col-12 col-md-10 col-lg-8">
-    <!-- Largeur contrôlée avec Bootstrap -->
-    <div class="border border-2 rounded-3 p-5 text-center" style="border-color: #FDF62C !important;">
-      <!-- Conteneur du titre avec les icônes alignées -->
-      <div class="d-flex justify-content-between align-items-center mb-4">
-        <!-- Icône LinkedIn à gauche -->
-        <a href="https://www.linkedin.com" target="_blank" class="text-dark">
-          <i class="bi bi-linkedin" style="font-size: 2rem; color: #FDF62C;"></i> <!-- Couleur LinkedIn -->
-        </a>
-        
-        <!-- Titre centré -->
-        <h2 style="font-size: 2rem; color: #FFFF; flex-grow: 1;">Contact</h2>
-        
-        <!-- Icône Instagram à droite -->
-        <a href="https://www.instagram.com" target="_blank" class="text-dark">
-          <i class="bi bi-instagram" style="font-size: 2rem; color: #FDF62C;"></i> <!-- Couleur Instagram -->
-        </a>
-      </div>
-      
-      <!-- Informations de contact -->
-      <div class="text-white mb-4">
-        <p><i class="bi bi-envelope" style="font-size: 1rem; color: #FDF62C; margin-right: 0.2rem;"></i>
-          <strong>Email:</strong> contact\nexample.com</p>
-        <p><i class="bi bi-telephone" style="font-size: 1rem; color: #FDF62C; margin-right: 0.2rem;"></i> <strong>Téléphone:</strong> +123 456 7890</p> 
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Informations supplémentaires en dehors du cadre -->
-<div class="row justify-content-center mt-4">
-  <div class="col-12 col-md-10 col-lg-8 text-center">
-    <p style="font-family: 'Itim', sans-serif; font-size: 1.2rem; color: #FDF62C;">
-      <strong>Disponibilités :</strong>
-    </p>
-    <p style="font-family: 'Itim', sans-serif; font-size: 1.1rem; color: #FDF62C;">
-      Du Lundi au Samedi : <br>
-      10h à 12h <br>
-      13h à 18h
-    </p>
-  </div>
-</div>
-
-
-
+    <!-- le component pour les contact-->
+     <app-contact></app-contact>
+     
+    <!-- le compoenent pour les dispoibilités-->
+    <app-disponibilidad></app-disponibilidad>
 
 </div>
-<!-- Footer -->
-<footer class="bg-dark text-center text-white py-4">
-  <div class="container">
-    <!-- Nom de l'entreprise et année d'ouverture -->
-    <p style="font-family: 'Itim', sans-serif; font-size: 1.2rem; color: #FDF62C;">
-      <strong>MS Nettoyage 80</strong> - Ouverture en 2025
-    </p>
 
-    <!-- Informations supplémentaires -->
-    <p style="font-family: 'Itim', sans-serif; font-size: 1rem; color: #FDF62C;">
-      © 2025 MS Nettoyage 80. Tous droits réservés.
-    </p>
-  </div>
-</footer>
-
+    <!-- le componenent pour le footer-->
+    <app-footer></app-footer>
 
 <!-- Styles -->
 <style>

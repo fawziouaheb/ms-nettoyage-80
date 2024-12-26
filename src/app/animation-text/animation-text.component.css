@@ -1,0 +1,36 @@
+  /* Conteneur pour l'animation */
+  .tarifs-container {
+    position: relative;
+    overflow: hidden; /* Cache ce qui sort du conteneur */
+    width: 100%; /* S'adapte à la largeur de l'écran */
+    height: 2rem; /* Ajuste la hauteur pour s'assurer que le texte est bien visible */
+  }
+
+  /* Animation pour déplacer le texte */
+  .tarifs-text {
+    font-size: 1.25rem; /* Taille du texte */
+    color: #FDF62C; /* Couleur jaune vif */
+    font-weight: bold;
+    white-space: nowrap; /* Empêche les retours à la ligne */
+    position: absolute;
+    animation: slide-text 10s linear infinite; /* Animation fluide et continue */
+  }
+
+  @keyframes slide-text {
+    0% {
+      transform: translateX(100%); /* Commence hors de l'écran à droite */
+    }
+    100% {
+      transform: translateX(-100%); /* Sort par la gauche */
+    }
+  }
+
+  /* Styles responsives */
+  @media (max-width: 768px) {
+    .tarifs-text {
+      font-size: 1rem; /* Réduit légèrement la taille du texte pour les petits écrans */
+    }
+    .tarifs-container {
+      height: 2.5rem; /* Ajuste la hauteur pour s'assurer que tout le texte reste visible */
+    }
+  }

@@ -1,12 +1,29 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';  // Utilisé côté client
+import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { AppRoutingModule } from './app-routing.module';  // Importation des routes
-
+import { FooterComponent } from './footer/footer.component';
+import { DisponibilidadComponent } from './disponibilidad/disponibilidad.component';
+import { ContactComponent } from './contact/contact.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { ServiceComponent } from './service/service.component';
+import { AnimationTextComponent } from './animation-text/animation-text.component'
+import { PresentationMsComponent } from './presentation-ms/presentation-ms.component'
 @NgModule({
-  declarations: [AppComponent],  // Déclaration du composant principal
-  imports: [BrowserModule, AppRoutingModule],  // Importation du module de routage et du module browser
+  declarations: [
+ 
+
+  ],
+  imports: [
+    BrowserModule,
+    FooterComponent,
+    DisponibilidadComponent,
+    ContactComponent,
+    NavbarComponent,
+    ServiceComponent,
+    AnimationTextComponent,
+    PresentationMsComponent
+  ],
   providers: [],
-  bootstrap: [AppComponent]  // Composant à afficher en premier
+  bootstrap: []
 })
-export class AppModule {}
+export class AppModule { }
