@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "baseHref": "/ms-nettoyage-80/",
             "outputPath": "dist/ms-nettoyage-80",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -38,15 +39,16 @@
             "outputMode": "server",
             "ssr": {
               "entry": "src/server.ts"
-            },
-            "baseHref": "/ms-nettoyage-80/"
+            }
           },
           "configurations": {
             "production": {
+              
+              "prerender": false,
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "700kB",
+                  "maximumWarning": "500kB",
                   "maximumError": "1MB"
                 },
                 {
