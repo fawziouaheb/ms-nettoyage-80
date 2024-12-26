@@ -9,6 +9,11 @@
     position: relative;
     animation: slide-text 8s linear infinite; /* Animation simple */
   }
+  .title-very-large {
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 20px;
+  }
 
   @keyframes slide-text {
     0% {
