@@ -1,0 +1,20 @@
+  /* Animation pour déplacer le texte */
+  .tarifs-text {
+    font-size: 1.25rem; /* Taille du texte */
+    color: #FDF62C; /* Couleur jaune vif */
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap; /* Empêche le retour à la ligne */
+    overflow: hidden; /* Masque le contenu débordant */
+    position: relative;
+    animation: slide-text 8s linear infinite; /* Animation simple */
+  }
+
+  @keyframes slide-text {
+    0% {
+      transform: translateX(-100%); /* Commence hors de l'écran à droite */
+    }
+    100% {
+      transform: translateX(100%); /* Sort par la gauche */
+    }
+  }
