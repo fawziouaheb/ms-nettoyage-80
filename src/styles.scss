@@ -1,0 +1,30 @@
+
+
+// Redéfinir les couleurs de Bootstrap
+$primary: #FDF62C;    // couleur du titre principal
+$secondary: #34F05D;  // couleur de l'autre titre
+$background-color: #423E3E;  // couleur de fond
+
+// Autres personnalisations Bootstrap ou CSS
+$btn-primary-bg: #FDF62C;      // Couleur du fond des boutons principaux
+$btn-primary-border: #FDF62C;  // Couleur de la bordure des boutons principaux
+$btn-primary-color: #000;      // Couleur du texte dans les boutons
+
+// Applique les personnalisations
+body {
+    background-color: $background-color;
+}
+
+// Règles CSS supplémentaires
+.drop-shadow {
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
+}
+.title-very-large {
+  font-size: 5vw;
+  font-weight: 600;
+  color: $primary;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
