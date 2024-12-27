@@ -1,281 +1,40 @@
   <!--section de la présentation de -->
   <app-presentation-ms></app-presentation-ms>
 
+
+
+  <div class="text-center my-4" style="color: #34F05D; font-family: 'Nerko One';">
+    <div class="fs-3">PROPRE POUR VOTRE VOITURE, SAINT POUR LA PLANET</div>
+    <div class="fs-4">Avec MS NETTOYAGE 80</div>
+</div>
+
+
+
   <!-- les services -->
   <app-service></app-service>
 
   <!-- Tarifs en dehors de Nos Services -->
   <app-animation-text  [texte]="'Tarifs particulier TTC sur Amiens et ses alentours + 1.5 €/Km pour plus de 15 Km d\'Amiens'"></app-animation-text>
 
-<div class="container-fluid py-5">
 
-  <!-- Section: Pack Intérieur -->
-  <div class="row align-items-center" style="background: linear-gradient(to bottom, #FF9500, #E6DE04);">
-    <!-- Texte -->
-    <div class="col-md-6">
-      <h2 class="fw-bold" style="color: #000;margin-top: 30px; ">Pack Intérieur</h2>
-      <h3 class="display-6 " style="color: #000;font-weight: bold;">30 <span style="font-size: 0.6em; position: relative; top: -0.5em;font-weight: bold;"> €</span></h3>
-      <h4 class="ms-sm-6 ms-md-6 ms-lg-16">
-        <small class="text-muted">+10 € monospace / 4 X4 / SUV</small>
-      </h4>
-      <ul class="list-unstyled mt-3">
-        <li><i class="bi bi-check-circle-fill text-success"></i> Aspiration verticale et coffre</li>
-        <li><i class="bi bi-check-circle-fill text-success"></i> Séchage à la maison</li>
-        <li><i class="bi bi-check-circle-fill text-success"></i> Démoustiquage</li>
-        <li><i class="bi bi-check-circle-fill text-success"></i> Brillant pneus</li>
-      </ul>
-      <p class="text-success mt-3"><i class="bi bi-check-circle-fill"></i> Possibilité rajout si sale</p>
-    </div>
-    <!-- Image -->
-    <div class="col-md-6">
-      <img src="assets/images/pack-interieur.png" alt="Pack Intérieur" class="img-fluid rounded shadow">
-    </div>
-  </div>
 
-  <!-- Section: Extérieur -->
-  <div class="row align-items-center" style="background: linear-gradient(to bottom, #636363, #D3D3D3);">
 
-    <!-- Texte -->
-    <div class="col-md-6 order-md-1">
-      <h2 class="fw-bold" style="color: #000;margin-top: 30px; ">Pack Extérieur</h2>
+  <div class="container-fluid py-5">
 
-      <h3 class="display-6 " style="color: #000;font-weight: bold;">30 <span style="font-size: 0.6em; position: relative; top: -0.5em;font-weight: bold;"> €</span></h3>
-      <h4 class="ms-sm-6 ms-md-6 ms-lg-16">
-        <small class="text-muted">+10 € monospace / 4 X4 / SUV</small>
-      </h4>
-      
-      <ul class="list-unstyled mt-3">
-        <li><i class="bi bi-check-circle-fill text-success"></i> Nettoyage carrosserie</li>
-        <li><i class="bi bi-check-circle-fill text-success"></i> Séchage à la main</li>
-        <li><i class="bi bi-check-circle-fill text-success"></i> Démoustiquage</li>
-        <li><i class="bi bi-check-circle-fill text-success"></i> Nettoyage vitre extérieur</li>
-        <li><i class="bi bi-check-circle-fill text-success"></i> Nettoyage joints</li>
-        <li><i class="bi bi-check-circle-fill text-success"></i> Brillant pneus</li>
-      </ul>
-      
-    </div>
-    <div class="col-md-6">
-      <img src="assets/images/pack-exterieur.png" alt="Pack Intérieur" class="img-fluid rounded shadow">
-    </div>
+    <!-- Section: Pack Intérieur -->
+    <app-pack-internel></app-pack-internel>
 
-  </div>
-  
+    <!-- Section: Extérieur -->
+    <app-pack-externel-only></app-pack-externel-only>
 
-  <div class="row align-items-center" style="background: linear-gradient(to bottom, #FF9500, #E6DE04);">
     <!-- Pack Intérieur/ extérieur -->
-    <div class="col-md-6">
-      <h2 class="fw-bold" style="color: #000;margin-top: 30px; ">Pack Intérieur / Exterieur</h2>
-  
-      <ul class="list-unstyled mt-3">
-        <li class="d-flex align-items-center">
-          <i class="bi bi-check-circle-fill text-success"></i>
-          <span class="ms-2">Citadine/Berlin</span>
-          <p class="ms-3 mb-0 display-6" style="color: #000; font-weight: bold; font-size: 1em;">
-            50 <span style="font-size: 0.8em; position: relative; top: -0.5em; font-weight: bold;">€</span>
-          </p>
-        </li>
-        <li class="d-flex align-items-center">
-          <i class="bi bi-check-circle-fill text-success"></i>
-          <span class="ms-2">Monospace/SUV/4x4</span>
-          <p class="ms-3 mb-0 display-6" style="color: #000; font-weight: bold; font-size: 1em;">
-            65 <span style="font-size: 0.8em; position: relative; top: -0.5em; font-weight: bold;">€</span>
-          </p>
-        </li>
-      </ul>
-      <p class="text-success mt-3 d-flex align-items-center">
-        <i class="bi bi-check-circle-fill text-success"></i>
-        <!-- Prix 10€ -->
-        <span class="ms-2 display-6" style="color: #000; font-weight: bold; font-size: 1em;">
-          10 <span style="font-size: 0.8em; position: relative; top: -0.5em; font-weight: bold;">€</span>
-        </span> 
-        <!-- Texte "à" -->
-        <span class="ms-2" style="color: #000; font-weight: bold; font-size: 1em;">à</span>
-        <!-- Prix 40€ -->
-        <span class="ms-2 display-6" style="color: #000; font-weight: bold; font-size: 1em;">
-          40 <span style="font-size: 0.8em; position: relative; top: -0.5em; font-weight: bold;">€</span>
-        </span>
-        <!-- Texte "Selon l'état" -->
-        <span class="ms-2" style="color: #000; font-weight: bold; font-size: 1em;">Selon l'état</span>
-      </p>
-    </div>
-    <!-- Image -->
-    <div class="col-md-6" style="margin-top: 30px; margin-bottom: 30px;">
-      <img src="assets/images/pack-interieur.png" alt="Pack Intérieur" class="img-fluid rounded shadow">
-    </div>
-  </div>
-  
+    <app-pack-externel></app-pack-externel>
 
+    <!-- pack profondeur-->
+    <app-pack-depth></app-pack-depth>
 
-
-  <!-- pack profondeur-->
-  <div class="row align-items-center" style="background: linear-gradient(to bottom, #636363, #D3D3D3);">
-
-    <!-- Texte -->
-    <div class="col-md-6 order-md-1">
-      <h2 class="fw-bold" style="color: #000;margin-top: 30px; ">Pack Profondeur</h2>
-
-      <h3 class="display-6 " style="color: #000;font-weight: bold;">30 <span style="font-size: 0.6em; position: relative; top: -0.5em;font-weight: bold;"> €</span></h3>
-      <h4 class="ms-sm-6 ms-md-6 ms-lg-16">
-        <small class="text-muted">+10 € monospace / 4 X4 / SUV</small>
-      </h4>
-      
-      <ul class="list-unstyled mt-3">
-        <li class="d-flex align-items-center">
-          <i class="bi bi-check-circle-fill text-success"></i>
-          <span class="ms-2">Plastique</span>
-          <p class="ms-3 mb-0 display-6" style="color: #FDF62C; font-weight: bold; font-size: 1em;">
-            20 <span style="font-size: 0.8em; position: relative; top: -0.5em; font-weight: bold;">€</span>
-          </p>
-        </li>
-        <li class="d-flex align-items-center">
-          <i class="bi bi-check-circle-fill text-success"></i>
-          <span class="ms-2">Plafonnier</span>
-          <p class="ms-3 mb-0 display-6" style="color: #FDF62C; font-weight: bold; font-size: 1em;">
-            30 <span style="font-size: 0.8em; position: relative; top: -0.5em; font-weight: bold;">€</span>
-          </p>
-        </li>
-        <li class="d-flex align-items-center">
-          <i class="bi bi-check-circle-fill text-success"></i>
-          <span class="ms-2">Moquette</span>
-          <p class="ms-3 mb-0 display-6" style="color: #FDF62C; font-weight: bold; font-size: 1em;">
-            30 <span style="font-size: 0.8em; position: relative; top: -0.5em; font-weight: bold;">€</span>
-          </p>
-        </li>
-        <li class="d-flex align-items-center">
-          <i class="bi bi-check-circle-fill text-success"></i>
-          <span class="ms-2">Siège tissu</span>
-          <p class="ms-3 mb-0 display-6" style="color: #FDF62C; font-weight: bold; font-size: 1em;">
-            70 <span style="font-size: 0.8em; position: relative; top: -0.5em; font-weight: bold;">€</span>
-          </p>
-        </li>
-        <li class="d-flex align-items-center">
-          <i class="bi bi-check-circle-fill text-success"></i>
-          <span class="ms-2">Siège cuir</span>
-          <p class="ms-3 mb-0 display-6" style="color: #FDF62C; font-weight: bold; font-size: 1em;">
-            80 <span style="font-size: 0.8em; position: relative; top: -0.5em; font-weight: bold;">€</span>
-          </p>
-        </li>
-        <li class="d-flex align-items-center">
-          <i class="bi bi-check-circle-fill text-success"></i>
-          <span class="ms-2">Tapis maison à partir de </span>
-          <p class="ms-3 mb-0 display-6" style="color: #FDF62C; font-weight: bold; font-size: 1em;">
-            20 <span style="font-size: 0.8em; position: relative; top: -0.5em; font-weight: bold;">€</span>
-          </p>
-        </li>
-        <li class="d-flex align-items-center">
-          <i class="bi bi-check-circle-fill text-success"></i>
-          <span class="ms-2">Canapé à partir de </span>
-          <p class="ms-3 mb-0 display-6" style="color: #FDF62C; font-weight: bold; font-size: 1em;">
-            30 <span style="font-size: 0.8em; position: relative; top: -0.5em; font-weight: bold;">€</span>
-          </p>
-        </li>
-      </ul>
-      <p class="text-success mt-3 d-flex align-items-center">
-        <i class="bi bi-check-circle-fill text-success"></i>
-      
-        <!-- Prix 10€ -->
-        <span class="ms-2 display-6" style="color: #FDF62C; font-weight: bold; font-size: 1em;">
-          10 <span style="font-size: 0.8em; position: relative; top: -0.5em; font-weight: bold;">€</span>
-        </span> 
-      
-        <!-- Texte "à" -->
-        <span class="ms-2" style="color: #000; font-weight: bold; font-size: 1em;">à</span>
-      
-        <!-- Prix 40€ -->
-        <span class="ms-2 display-6" style="color: #FDF62C; font-weight: bold; font-size: 1em;">
-          40 <span style="font-size: 0.8em; position: relative; top: -0.5em; font-weight: bold;">€</span>
-        </span>
-      
-        <!-- Texte "Selon l'état" -->
-        <span class="ms-2" style="color: #000; font-weight: bold; font-size: 1em;">Selon l'état</span>
-      </p>
-    </div>
-    <div class="col-md-6">
-      <img src="assets/images/pack-exterieur.png" alt="Pack Intérieur" class="img-fluid rounded shadow">
-    </div>
-
-
-  </div>
-
-
-<!-- les petites cartes de mes packes-->
-  <div class="container mt-5">
-    <div class="row">
-      <!-- carte packe tapis et canapté-->
-      <div class="col-md-4">
-        <div class="card" style="width: 18rem; background: linear-gradient(to bottom, #636363, #D3D3D3);">
-          <div class="card-body d-flex flex-column justify-content-between" style="height: 100%;">
-            <!-- Titre centré et en gras -->
-            <h5 class="card-title text-center fw-bold" style="font-size: 1.5rem;">Tapis Et Canapé</h5>
-      
-            <!-- Texte "Seulement à" avec text-muted, aligné à gauche -->
-            <p class="card-text text-muted" style="font-size: 1.2rem; font-weight: bold;">À partir de </p>
-      
-            <!-- Prix en plus grand, en gras, en bas à droite -->
-            <p class="text-center" style="font-size: 1.5rem; font-weight: bold;">30<span style=" position: relative; top: -0.5em;font-size: 1rem">€</span></p>
-      
-            <!-- Liste des éléments, centrée et en gras avec la police NerkoOne -->
-            <ul class="list-unstyled text-center" style="font-family: 'Nerko One', sans-serif; font-weight: bold;">
-              <li>Selon la taille</li>
-            </ul>
-
-            <!-- Titre centré et en gras -->
-            <h5 class="card-title text-center fw-bold" style="font-size: 1.5rem;">Destiquage</h5>
-      
-            <!-- Texte "Seulement à" avec text-muted, aligné à gauche -->
-            <p class="card-text text-muted" style="font-size: 1.2rem; font-weight: bold;">À partir de </p>
-      
-            <!-- Prix en plus grand, en gras, en bas à droite -->
-            <p class="text-center" style="font-size: 1.5rem; font-weight: bold;">20<span style=" position: relative; top: -0.5em;font-size: 1rem">€</span></p>
-      
-            
-          </div>
-        </div>
-      </div>
-      <!-- carte pack spécial -->
-      <div class="col-md-4">
-        <div class="card" style="width: 18rem; background: linear-gradient(to bottom, #FF9500, #E6DE04)">
-          <div class="card-body d-flex flex-column justify-content-between" style="height: 100%;">
-            <!-- Titre centré et en gras -->
-            <h5 class="card-title text-center fw-bold" style="font-size: 1.5rem;">Pack Spécial</h5>
-      
-            <!-- Texte "Seulement à" avec text-muted, aligné à gauche -->
-            <p class="card-text text-muted" style="font-size: 1.2rem; font-weight: bold;">Seulement à</p>
-      
-            <!-- Prix en plus grand, en gras, en bas à droite -->
-            <p class="text-center" style="font-size: 1.5rem; font-weight: bold;">80<span style=" position: relative; top: -0.5em;font-size: 1rem">€</span></p>
-      
-            <!-- Liste des éléments, centrée et en gras avec la police NerkoOne -->
-            <ul class="list-unstyled text-center" style="font-family: 'Nerko One', sans-serif; font-weight: bold;">
-              <li>Camion</li>
-              <li>Camping Car</li>
-              <li>Tracteur</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      
-      <!-- carte option-->
-      <div class="col-md-4">
-        <div class="card" style="width: 18rem; background: linear-gradient(to bottom, #636363, #D3D3D3);">
-          <div class="card-body d-flex flex-column justify-content-between" style="height: 100%;">
-            <!-- Titre centré et en gras -->
-            <h5 class="card-title text-center fw-bold" style="font-size: 1.5rem;">Option</h5>      
-            <!-- Liste des éléments, centrée et en gras avec la police NerkoOne -->
-            <ul class="list-unstyled text-center" style="font-family: 'Nerko One', sans-serif; font-weight: bold;">
-              <li>Shampoing tapis</li><span style="color: #FDF62C; font-weight: bold;">10</span>
-              <li>Shampoing coffre</li>
-              <li>Poil à partir de </li>
-              <li>Cire de protection</li>
-              <li>Goudron</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
+    <!-- les petites cartes de mes packes-->
+    <app-card-pack></app-card-pack>
   
     <!-- Nos services sur RDV-->
     <app-animation-text  [texte]="'Sur rdv, possibilité après 18h pour 15$ de plus'"></app-animation-text>
@@ -286,19 +45,20 @@
     <!-- le compoenent pour les dispoibilités-->
     <app-disponibilidad></app-disponibilidad>
 
-</div>
+  </div>
 
     <!-- le componenent pour le footer-->
     <app-footer></app-footer>
 
-<!-- Styles -->
-<style>
-  h2 {
-    font-size: 2rem;
-  }
 
-  ul {
-    font-size: 1.1rem;
-  }
-</style>
+  <style>
+    h2 {
+      font-size: 2rem;
+    }
+
+    ul {
+      font-size: 1.1rem;
+    }
+
+  </style>
 
