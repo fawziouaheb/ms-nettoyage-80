@@ -1,14 +1,8 @@
   <!--section de la présentation de -->
   <app-presentation-ms></app-presentation-ms>
 
-
-
-  <div class="text-center my-4" style="color: #34F05D; font-family: 'Nerko One';">
-    <div class="fs-3">PROPRE POUR VOTRE VOITURE, SAINT POUR LA PLANET</div>
-    <div class="fs-4">Avec MS NETTOYAGE 80</div>
-</div>
-
-
+  <!-- notre slogan -->
+  <app-slogan></app-slogan>
 
   <!-- les services -->
   <app-service></app-service>
@@ -16,37 +10,36 @@
   <!-- Tarifs en dehors de Nos Services -->
   <app-animation-text  [texte]="'Tarifs particulier TTC sur Amiens et ses alentours + 1.5 €/Km pour plus de 15 Km d\'Amiens'"></app-animation-text>
 
+  <!-- les packs de Ms nettoyage 80-->
+  <section id = "packs">
+    <div class="container-fluid py-5">
 
+      <!-- Section: Pack Intérieur -->
+      <app-pack-internel></app-pack-internel>
 
+      <!-- Section: Extérieur -->
+      <app-pack-externel-only></app-pack-externel-only>
 
-  <div class="container-fluid py-5">
+      <!-- Pack Intérieur/ extérieur -->
+      <app-pack-externel></app-pack-externel>
 
-    <!-- Section: Pack Intérieur -->
-    <app-pack-internel></app-pack-internel>
+      <!-- pack profondeur-->
+      <app-pack-depth></app-pack-depth>
 
-    <!-- Section: Extérieur -->
-    <app-pack-externel-only></app-pack-externel-only>
+      <!-- les petites cartes de mes packes-->
+      <app-card-pack></app-card-pack>
+    
+      <!-- Nos services sur RDV-->
+      <app-animation-text  [texte]="'Sur rdv, possibilité après 18h pour 15$ de plus'"></app-animation-text>
 
-    <!-- Pack Intérieur/ extérieur -->
-    <app-pack-externel></app-pack-externel>
+      <!-- le component pour les contact-->
+      <app-contact></app-contact>
+      
+      <!-- le compoenent pour les dispoibilités-->
+      <app-disponibilidad></app-disponibilidad>
 
-    <!-- pack profondeur-->
-    <app-pack-depth></app-pack-depth>
-
-    <!-- les petites cartes de mes packes-->
-    <app-card-pack></app-card-pack>
-  
-    <!-- Nos services sur RDV-->
-    <app-animation-text  [texte]="'Sur rdv, possibilité après 18h pour 15$ de plus'"></app-animation-text>
-
-    <!-- le component pour les contact-->
-     <app-contact></app-contact>
-     
-    <!-- le compoenent pour les dispoibilités-->
-    <app-disponibilidad></app-disponibilidad>
-
-  </div>
-
+    </div>
+  </section>
     <!-- le componenent pour le footer-->
     <app-footer></app-footer>
 

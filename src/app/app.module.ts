@@ -12,7 +12,9 @@ import { CardPackComponent } from './card-pack/card-pack.component';
 import { PackDepthComponent } from './pack-depth/pack-depth.component';
 import { PackExternelComponent } from './pack-externel/pack-externel.component';
 import { PackExternelOnlyComponent } from './pack-externel-only/pack-externel-only.component';
-import { PackInternelComponent } from './pack-internel/pack-internel.component'
+import { PackInternelComponent } from './pack-internel/pack-internel.component';
+import { SloganComponent } from './slogan/slogan.component';
+
 @NgModule({
   declarations: [
  
@@ -31,7 +33,8 @@ import { PackInternelComponent } from './pack-internel/pack-internel.component'
     PackDepthComponent,
     PackExternelComponent,
     PackExternelOnlyComponent,
-    PackInternelComponent
+    PackInternelComponent,
+    SloganComponent
   ],
   providers: [],
   bootstrap: []
